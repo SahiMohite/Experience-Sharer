@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
       }
     };
     fetchUser();
-  }, []);
+  }, [API_URL]);
 
   return <AuthContext.Provider value={{ user, setUser }}>{children}</AuthContext.Provider>;
 };
