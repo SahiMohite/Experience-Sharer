@@ -1,0 +1,106 @@
+/* Full-screen centered container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #000957, #001b79);
+  padding: 20px;
+}
+
+/* Stylish register box */
+.register-form {
+  background: #344CB7;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 235, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title styling */
+.register-form h2 {
+  color: #FFEB00;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 235, 0, 0.5);
+}
+
+/* Placeholder color */
+.register-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input focus effect */
+.register-form input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #FFEB00;
+  box-shadow: 0 0 10px rgba(255, 235, 0, 0.9);
+}
+
+/* Register button */
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background: #FFEB00;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(255, 235, 0, 0.7);
+}
+
+/* Button hover effect */
+.register-form button:hover {
+  background: #ffffff;
+  color: #344CB7;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 235, 0, 0.9);
+}
+
+/* Glow effect for the form */
+@keyframes fadeIn {
+  from {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .register-form {
+      width: 90%;
+      padding: 30px;
+  }
+}
